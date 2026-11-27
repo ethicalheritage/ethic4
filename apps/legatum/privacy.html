@@ -24,7 +24,7 @@
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p class="muted">Legatum DeadDrop · Last updated: 23 November 2026</p>
+<p class="muted">Legatum DeadDrop · Last updated: 27 November 2026</p>
 
 <p>Legatum DeadDrop is designed to respect your privacy in the simplest possible way: <strong>we do not collect your data</strong>. The app runs entirely on your phone.</p>
 
@@ -32,19 +32,19 @@
 <p>The app <strong>does not collect, does not send and does not store</strong> personal data on the developer's servers. We have no server at all: there is nothing, anywhere, that we can see.</p>
 
 <h2>Your data stays on your phone</h2>
-<p>Everything you create — your messages, your recipients, your triggers and your settings — is stored <strong>on your device only</strong>, and it is <strong>encrypted</strong> (AES-256-GCM, with keys derived from your password). It is unlocked with your password and, if you turn it on, your fingerprint or face; it does not leave the phone except to send the messages you configured.</p>
+<p>Everything you create — your messages and the files you attach to them, your recipients, your triggers and your settings — is stored <strong>on your device only</strong>, and it is <strong>encrypted</strong> (AES-256-GCM, with keys derived from your password). It is unlocked with your password and, if you turn it on, your fingerprint or face; it does not leave the phone except to send the messages you configured.</p>
 
 <h2>Sending your messages by email</h2>
 <p>To send your messages, you connect <strong>your own</strong> Google account once, using Google's official sign-in. The app asks for a single permission, <strong>"send email on your behalf"</strong> (the Gmail <em>send</em> scope), and uses it <strong>only</strong> to send the messages you configured, to the recipients you chose. The app <strong>does not read, import or store</strong> your existing emails. The access token stays <strong>encrypted on your device</strong> and is never sent to us.</p>
 
 <h2>Sending your messages by SMS</h2>
-<p>Your alerts can also be delivered as <strong>text messages</strong>, sent from <strong>your own phone number</strong> directly by the device — there is no third-party gateway and no server in between. Your mobile operator's standard SMS charges may apply. If you set up a check-in or command keyword, the app also looks at <strong>incoming</strong> text messages <strong>only</strong> to recognise that keyword; it does not read, store or transmit the content of your other messages.</p>
+<p>Your alerts can also be delivered as <strong>text messages</strong>, sent from <strong>your own phone number</strong> directly by the device — there is no third-party gateway and no server in between. Your mobile operator's standard SMS charges may apply. If you turn on remote commands, the app also looks at <strong>incoming</strong> text messages <strong>only</strong> to recognise a command that comes from a number you authorised and begins with your command password; it does not read, store or transmit the content of your other messages.</p>
 
 <h2>Your location (optional)</h2>
 <p>If you choose to attach your location to an alert, the app includes it in the messages you configured, so your contacts know where to look for you. You can include either a <strong>fixed position</strong> you capture when preparing the message, or your <strong>live position</strong> at the moment the alert is sent. Your location is used <strong>only</strong> for this, is stored <strong>encrypted on your device</strong> like everything else, and is sent only to the recipients you chose. It is off unless you turn it on; the live option additionally needs the background-location permission.</p>
 
-<h2>Google API Services — Limited Use</h2>
-<p>Legatum DeadDrop's use and transfer of information received from Google APIs follows the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements. Data obtained through the Gmail permission is used solely to provide the sending feature on your device and is never transferred to us or to any third party.</p>
+<h2>Google user data</h2>
+<p>This section states exactly what Legatum DeadDrop does with the data of your Google account.</p><ul><li><strong>Data accessed.</strong> The app asks for one single Google permission (OAuth scope): <code>https://www.googleapis.com/auth/gmail.send</code>, which Google shows as “Send email on your behalf”. This permission only allows sending email. The app cannot and does not read, list, search, change or delete your emails, and it does not access your contacts, calendar, files, profile or any other data of your Google account. The only data the app receives from Google are the access tokens that prove you granted this permission.</li><li><strong>Data use.</strong> The permission is used for one purpose only: to send, from your own Gmail address, the messages you wrote in the app (the text, the files you attached and, if you turned it on, your location) to the recipients you chose, when the conditions you set occur. It is not used for advertising, profiling or analytics, and it is not used to develop, improve or train artificial-intelligence or machine-learning models. No human reads your data.</li><li><strong>Data sharing.</strong> We do not share, transfer, sell or disclose Google user data to anyone. We have no server and we receive nothing. Your message goes directly from your phone to Google’s Gmail service over an encrypted connection (HTTPS/TLS), and Gmail delivers it to the recipients you chose.</li><li><strong>Data protection.</strong> The access tokens are stored only on your phone, encrypted with AES-256-GCM with a key kept in the Android Keystore, inside the app’s encrypted database. Your messages, attachments and recipients are encrypted on the device in the same way and are unlocked only with your app password. The app’s data is excluded from Android backups, so it is not copied to the cloud.</li><li><strong>Data retention and deletion.</strong> The access tokens stay on your phone only while the account is linked. They are deleted when you link a different account in the app’s Settings, when you clear the app’s storage (Android Settings › Apps › Storage › Clear storage) or when you uninstall the app. You can also withdraw the permission at any time from your Google Account (myaccount.google.com › Security › Third-party apps and services). Since we never receive your data, we keep nothing and there is nothing for us to delete; for any request write to ethicalheritage@gmail.com.</li></ul><p><strong>Limited Use.</strong> Legatum DeadDrop’s use and transfer to any other app of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
 
 <h2>Permissions the app may ask for</h2>
 <ul>
@@ -52,7 +52,7 @@
   <li><strong>Notifications</strong>: to show the background status and check-in reminders.</li>
   <li><strong>Running in the background</strong>: so the app can keep its timers reliably.</li>
   <li><strong>Send SMS</strong>: to deliver your alerts as text messages to the numbers you chose. If you turn on remote commands, the app also replies by SMS to the number you authorised to confirm each command it receives.</li>
-  <li><strong>Receive SMS (optional)</strong>: only if you set a check-in or command keyword, to recognise it in incoming messages.</li>
+  <li><strong>Receive SMS (optional)</strong>: only if you turn on remote commands, to recognise your commands in incoming messages.</li>
   <li><strong>Location (optional)</strong>: only if you enable attaching your position to an alert; background location only for the live-position option.</li>
 </ul>
 
